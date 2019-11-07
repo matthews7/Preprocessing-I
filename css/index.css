@@ -1,1 +1,299 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.bOne {
+  border: 1px solid lightgrey;
+  line-height: 1.2;
+  font-size: 1.5rem;
+}
+body {
+  margin: 0 5%;
+  max-width: 100%;
+  font-size: 62.5%;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.links a {
+  width: 15%;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding: 1%;
+  color: black;
+}
+@media (max-width: 480px) {
+  .links a {
+    font-size: 1rem;
+  }
+}
+.sectOne {
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  width: 100%;
+  padding: 10% 0 0 3%;
+  font-size: 1.5rem;
+}
+.sectOne img {
+  width: 30%;
+  padding-bottom: 2%;
+}
+.sectOne h1 {
+  font-size: 3rem;
+}
+.sectOne .quote {
+  font-size: 1.7rem;
+}
+.sectOne .meetUp {
+  border: 2px solid black;
+  width: 13%;
+  padding: 0.5% 2%;
+  border-radius: 10px;
+  margin: 1% 0 5% 0;
+}
+.sectOne a {
+  text-decoration: none;
+  color: black;
+}
+.sectOne .meetUp:hover {
+  background-color: whitesmoke;
+}
+.sectTwo {
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.sectTwo h2 {
+  font-size: 2rem;
+}
+.sectTwo .intro {
+  font-size: 1.5rem;
+  width: 45%;
+}
+.sectTwo .intro p {
+  line-height: 1.3;
+}
+.sectTwo p {
+  padding: 1%;
+}
+.sectTwo .skills {
+  font-size: 2rem;
+  width: 45%;
+}
+.sectTwo .skills p {
+  border: 1px solid lightgrey;
+  line-height: 1.2;
+  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+.sectThree {
+  font-size: 1.5rem;
+}
+.sectThree h2 {
+  font-size: 2.5rem;
+}
+.sectThree table {
+  width: 100%;
+}
+.sectThree thead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.sectThree thead tr {
+  display: flex;
+  justify-content: space-evenly;
+  border: 0.5px solid grey;
+}
+.sectThree thead td {
+  margin-top: 1%;
+  width: 50%;
+  font-size: 2rem;
+}
+.dGray {
+  background: lightgrey;
+}
+.bold {
+  font-weight: bold;
+}
+footer {
+  font-size: 1rem;
+  text-align: center;
+  padding: 3% 0 5% 0;
+}
+@media (max-width: 480px) {
+  .sectOne h1 {
+    font-size: 1.75rem;
+  }
+  .sectOne p {
+    font-size: 1.25rem;
+  }
+  .meetUp {
+    width: 40%;
+  }
+  .intro p {
+    font-size: 1rem;
+    padding: 3% 0;
+  }
+  .sectOne .meetUp {
+    width: 27%;
+    font-size: 1.25rem;
+  }
+  .sectOne .meetUp:hover {
+    background-color: salmon;
+  }
+  .sectTwo .skills h2 {
+    font-size: 1.5rem;
+  }
+  .sectTwo .intro h2 {
+    font-size: 1.5rem;
+  }
+  .sectThree h2 {
+    font-size: 1.5rem;
+  }
+  .sectThree thead td {
+    font-size: 1rem;
+  }
+}
